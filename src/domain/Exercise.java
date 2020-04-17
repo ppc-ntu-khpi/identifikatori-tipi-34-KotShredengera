@@ -17,10 +17,10 @@ public class Exercise {
 		IsDigit(s);
 
 		s = s.toLowerCase();
-		int i, flag = 0;
+		byte flag = 0;
 		String wordTest = "";
 
-		for (i = s.length() - 1; i >= 0; i--) {
+		for (int i = s.length() - 1; i >= 0; i--) {
 			if (s.charAt(i) == s.charAt(flag)) {
 				wordTest = wordTest + s.charAt(i);
 				flag++;
