@@ -2,11 +2,21 @@ package test;
 
 import domain.Exercise;
 
+/**
+ * Tests developed classes.
+ * 
+ * @author Kot_Shredingera
+ *
+ */
 public class TestResult {
+	/**
+	 * validation of data calculation
+	 * 
+	 * @param args program startup option.
+	 */
+	public static void main(String[] args) {
 
-    public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
-    }
+		String R = "äÎõîÄ";
+		System.out.println("Input word = " + R + ", is polidrom - " + Exercise.Calculate(R));
+	}
 }
